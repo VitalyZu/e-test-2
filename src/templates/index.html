@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eg Test server</title>
+    <style>
+        .param {
+            display: block;
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: 100px 400px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Method list</h1>
+        <ul>
+            <li><span><a href="/GetFullList">GetFullList</a></span> - <span>get full data object</span></li>
+            <li><span><a href="/GetMerchants">GetMerchants</a></span> - <span>get merchants list</span></li>
+            <li><span><a href="/GetCategories">GetCategories</a></span> - <span>get categories list</span></li>
+            <li><span><a href="/GetGames">GetGames</a></span> - <span>get games list</span>
+                <span class="param"><span>{limit}</span><span>- count of games</span></span>
+                <span class="param"><span>{start}</span><span>- start game number</span></span>
+                <span class="param"><span>{sort}</span><span>- sort, allowed values: name, id</span></span>
+                <span class="param"><span>{order}</span><span>- order, allowed values: asc, desc</span></span>
+            </li>
+            <li><span><a href="/GetGamesCount">GetGamesCount</a></span> - <span>get games count</span></li>
+            <li><span><a href="/GetCountriesRestrictions">GetCountriesRestrictions</a></span> - <span>get countries restrictions list</span></li>
+            <li><span><a href="/GetMerchantsCurrencies">GetMerchantsCurrencies</a></span> - <span>get merchants currencies list</span></li>           
+        </ul>
+    </div>
+</body>
+</html>

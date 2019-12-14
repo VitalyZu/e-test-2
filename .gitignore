@@ -1,0 +1,14 @@
+# IDE folders
+/.project
+/.settings
+/.buildpath
+/.idea
+/npm-debug.log
+/yarn.lock
+/nbproject/private/
+
+# /
+node_modules
+dist
+
+!**/.gitkeep
